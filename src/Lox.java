@@ -43,8 +43,8 @@ public class Lox {
         BufferedReader reader = new BufferedReader(input);
 
         for (;;) {
-            System.out.print(">>> ");
-            run(reader.readLint());
+            System.out.print("> ");
+            run(reader.readLine());
             hadError = false;
         }
     }
